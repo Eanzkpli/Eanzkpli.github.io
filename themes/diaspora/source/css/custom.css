@@ -1,0 +1,45 @@
+/* ===== 文章页背景图:亚托莉壁纸 + 半透明正文 ===== */
+
+/* 文章页整页背景:壁纸铺满、固定不随滚动 */
+#single {
+  background: url('/img/bg-atrii.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+/* 正文区:半透明白色毛玻璃,保证文字可读性 */
+.article .main {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 40px 50px !important;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* 目录侧栏也做毛玻璃,和正文统一 */
+.article .side .toc {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1em 1.2em !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* 顶部导航条半透明,衔接背景 */
+#top {
+  background: rgba(254, 254, 254, 0.85) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 手机端圆角收小,留出滚动空间 */
+@media (max-width: 768px) {
+  .article .main {
+    padding: 24px 20px !important;
+    border-radius: 10px;
+    width: 94%;
+  }
+}
