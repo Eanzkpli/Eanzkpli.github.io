@@ -48,7 +48,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/eanz || GitHub || '#24292e'
+  fab fa-github: https://github.com/Eanzkpli || GitHub || '#24292e'
 
 # --------------------------------------
 # Image Settings
@@ -290,7 +290,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/eanz
+      link: https://github.com/Eanzkpli
   card_announcement:
     enable: true
     content: 欢迎来到我的小站 🎉

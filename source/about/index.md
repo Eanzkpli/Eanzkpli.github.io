@@ -20,4 +20,4 @@ type: about
 
 ## 联系我
 
-欢迎通过 [GitHub](https://github.com/eanz) 找到我。
+欢迎通过 [GitHub](https://github.com/Eanzkpli) 找到我。
