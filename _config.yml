@@ -43,13 +43,16 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
+# ShokaX 使用自己的代码高亮(hexo-renderer-aether),必须留空以覆盖 Hexo 默认注入的 highlight.js
+syntax_highlighter:
 highlight:
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
+  exclude_languages:
+    - mermaid
 prismjs:
   preprocess: true
   line_number: true
@@ -103,7 +106,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: diaspora
+theme: shokax
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
