@@ -1,0 +1,28 @@
+.overview .author .image {
+  aspect-ratio: 1;
+  height: auto;
+  object-fit: cover;
+}
+
+.overview .side-shots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .75rem;
+}
+
+.overview .side-shots img {
+  width: calc((100% - 1rem) / 3);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: .75rem;
+  border: .0625rem solid var(--body-bg-shadow);
+  box-shadow: 0 0 .5rem .125rem var(--body-bg-shadow);
+  transition: transform .4s;
+}
+
+.overview .side-shots img:hover {
+  transform: scale(1.06);
+}

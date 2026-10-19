@@ -1,0 +1,11 @@
+-
+  var shots = [
+    { src: 'img/index-cover-web.jpg' },
+    { src: 'img/bg-atrii.jpg' },
+    { src: 'assets/avatar.jpg' }
+  ]
+
+if shots.length
+  div(class="side-shots")
+    each shot in shots
+      img(loading="lazy" decoding="async" alt="" src=url_for(shot.src))
