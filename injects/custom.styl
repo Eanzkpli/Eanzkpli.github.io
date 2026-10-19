@@ -1,3 +1,19 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: url("/img/bg-atrii.jpg") center center no-repeat;
+  background-size: cover;
+  opacity: .45;
+  pointer-events: none;
+}
+
+html[data-theme="dark"] body::before {
+  opacity: .22;
+  filter: brightness(.72);
+}
+
 .overview .author .image {
   aspect-ratio: 1;
   height: auto;
